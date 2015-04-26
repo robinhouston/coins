@@ -39,7 +39,7 @@ void print(pair *pairs, void *ignored) {
         if (i > 0) printf(", ");
         printf("(%d, %d)", pairs[i].count, pairs[i].denomination);
     }
-    printf("\n");
+    printf(")\n");
 }
 
 /* Find all the ways to make 'target' from 'number' coins of 'denominations'
