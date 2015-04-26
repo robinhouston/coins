@@ -43,8 +43,9 @@ void print(pair *pairs, void *ignored) {
 }
 
 /* Find all the ways to make 'target' from 'number' coins of 'denominations'
-   different denominations. For each one, call the 'callback' function with
-   two arguments: an array of pairs, and the supplied 'callback_args' pointer.
+   different denominations drawn from 'coins'. For each combination found,
+   call the 'callback' function with two arguments: an array of pairs,
+   and the supplied 'callback_args' pointer.
 */
 void quickcoins(int *coins, int denominations, int number, int target,
                 void (*callback)(pair *, void *), void *callback_args) {
