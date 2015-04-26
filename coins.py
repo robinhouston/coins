@@ -11,10 +11,8 @@ def partitions(n, k):
         for p in partitions(n-i, k-1):
             yield (i,) + p
 
-n = 0
 for coin_values in combinations(COINS, 5):
     for counts in partitions(100, 5):
-        n += 1
         if sum([ a*b for a,b in zip(coin_values, counts) ]) == TARGET:
             for coin_value, count in zip(coin_values, counts):
                 print "{count} x {coin_value}p coins".format(
