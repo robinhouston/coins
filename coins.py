@@ -14,7 +14,4 @@ def partitions(n, k):
 for coin_values in combinations(COINS, 5):
     for counts in partitions(100, 5):
         if sum([ a*b for a,b in zip(coin_values, counts) ]) == TARGET:
-            for coin_value, count in zip(coin_values, counts):
-                print "{count} x {coin_value}p coins".format(
-                    coin_value=coin_value, count=count)
-            print
+            print tuple(zip(counts, coin_values))
