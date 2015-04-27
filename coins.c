@@ -8,7 +8,7 @@
 #define NUMBER 100
 #define TARGET 3975
 
-static int all_coins[] = { 1, 2, 5, 10, 20, 50, 100, 200, 0 };
+static int all_coins[] = { 200, 100, 50, 20, 10, 5, 2, 1, 0 };
 
 /* A set of coins is represented as an array of type pair[DENOMINATIONS]. */
 typedef struct {
