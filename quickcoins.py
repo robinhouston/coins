@@ -4,8 +4,8 @@ NUMBER = 100
 TARGET = 3975
 
 def quickcoins(coins, denominations, number, target):
-    """Yield all the ways of making 'target' from
-    'number' different denominations of coins drawn from 'coins'.
+    """Yield all the ways of making 'target' from 'number' different coins
+    of 'denominations' different denominations drawn from 'coins'.
     """
     if denominations == 1:
         for coin in coins:
