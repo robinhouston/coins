@@ -5,3 +5,6 @@ run: coins
 
 coins: coins.c
 	gcc --std=c99 -O3 -o $@ $<
+
+hscoins: coins.hs
+	ghc --make "$<" -o "$@"
